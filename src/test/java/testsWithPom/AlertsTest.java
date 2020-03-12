@@ -1,10 +1,7 @@
-package tests;
+package testsWithPom;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HomePage;
 import pages.HomePage_2;
-import pages.LoginPage;
 
 public class AlertsTest extends Base {
 

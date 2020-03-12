@@ -1,17 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
+<!--This xml file will run test in paralle at class level, also borwser name is parameterized for cross browser test-->
+
 <suite name="Suite3" verbose="1" thread-count="2" parallel="classes">
     <test name="test3" >
-        <parameter name="browser" value="firefox" />
         <classes>
-            <class name="DemoCrossBrowserTest" />
-            <class name="DemoCrossBrowserTest2" />
+            <class name="testsWithoutPom.DemoFirstTestngTest" />
+            <class name="testsWithoutPom.DemoAlertTest" />
         </classes>
     </test>
     <test name="test4" >
-        <parameter name="browser" value="firefox" />
         <classes>
-            <class name="DemoCrossBrowserTest" />
+            <class name="testsWithoutPom.DemoFirstTestngTest" />
+            <class name="testsWithoutPom.DemoAlertTest" />
         </classes>
     </test>
 </suite>

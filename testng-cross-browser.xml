@@ -1,9 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite-1" verbose="2" >
-    <test name="test-1" >
+<!--This xml file will run test in paralle at class level, also borwser name is parameterized for cross browser test-->
+
+<suite name="Suite3" verbose="1">
+    <test name="test3" >
         <classes>
-            <class name="tests.AlertsTest" />
+            <class name="testsWithoutPom.DemoCrossBrowserTest" />
         </classes>
     </test>
 </suite>

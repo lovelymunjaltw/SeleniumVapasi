@@ -1,3 +1,5 @@
+package testsWithoutPom;
+
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,8 +12,9 @@ import java.net.URL;
 public class DemoGridTest {
 
     public static void main (String [] args){
-        // we can use @Test also instead of main method (if you want to execute by testng xml
-        // follow all the instructions shared in doc: "Set up for Selenium Grid" or follow README.md
+
+        // we can use @Test also instead of main method (if you want to execute by testng xml)
+        // follow all the instructions shared in doc: "Set up for Selenium Grid" or follow README.md file in project
 
         ChromeOptions options = new ChromeOptions();
         DesiredCapabilities capabilities = new DesiredCapabilities();

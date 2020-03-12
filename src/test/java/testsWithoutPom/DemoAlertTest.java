@@ -1,3 +1,5 @@
+package testsWithoutPom;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,35 +32,8 @@ public class DemoAlertTest {
             e.printStackTrace();
         }
         alert.sendKeys("Hello alert");
-        // Now we can accept alert, Above text will be visible on same web page under result
+        // Now we can accept alert, Above text will be visible on same web page under Result
         alert.accept();
-    }
-
-
-    @DataProvider(name = "sample-data-provider")
-    public Object[][] createData1() {
-        return new Object[][] {{ "Bags"},{ "Mugs"}};
-    }
-
-    @Test(dataProvider = "sample-data-provider")
-    public void verifySearch(String product) {
-        driver.findElement(By.id("keywords")).sendKeys(product);
-        System.out.println("Searched product:-> " + product );
-    }
-
-
-
-    @Test
-    public void test (){
-        driver.get("https://spree-vapasi.herokuapp.com");
-        System.out.println("this is test");
-        Assert.assertEquals(1,0);
-    }
-
-    @Test
-    public void test1 (){
-        driver.get("https://spree-vapasi.herokuapp.com");//
-        System.out.println("this is test1");
-        Assert.assertEquals(1,0);
+        // can put any further assertions
     }
 }
