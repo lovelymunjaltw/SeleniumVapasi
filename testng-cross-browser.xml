@@ -2,8 +2,9 @@
 
 <!--This xml file will run test in paralle at class level, also borwser name is parameterized for cross browser test-->
 
-<suite name="Suite3" verbose="1">
-    <test name="test3" >
+<suite name="Suite2" verbose="1">
+    <parameter name="browser" value="firefox" />
+    <test name="test2" >
         <classes>
             <class name="testsWithoutPom.DemoCrossBrowserTest" />
         </classes>
