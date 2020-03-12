@@ -1,3 +1,40 @@
+#Set up for Automation using Selenium:
+
+Open ‘Terminal’ and Install HomeBrew:  (run below command)
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ 
+    What is Homebrew used for?
+    Homebrew is a free and open-source software package management system that simplifies the installation of software (with just 1 line of command) on Apple's macOS operating system and Linux.
+
+
+Update Brew (no need if Already up-to-date), command: brew update
+
+Install Java 8 command: brew cask install java8
+    Or (if we above one does not work):  brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+
+Install Chrome and/or Firefox Browsers 
+    brew cask install google-chrome
+    brew cask install firefox
+
+Download browser specific driver:
+    https://chromedriver.chromium.org/downloads
+    https://github.com/mozilla/geckodriver/releases
+
+Install Any Java IDE of your preference:
+    We prefer community edition of IntelliJ: https://www.jetbrains.com/idea/download/#section=mac
+
+Download Selenium IDE extension for Chrome Firefox:
+    https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=en
+    https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
+
+Download tetsng jar: http://www.java2s.com/Code/Jar/t/Downloadtestng60jar.htm
+
+Download Selenium webdriver jar: https://www.selenium.dev/downloads/
+
+Install Maven: brew install maven
+
+
+
 #Set up for Selenium Grid:
 
 
