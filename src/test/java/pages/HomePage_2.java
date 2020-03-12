@@ -41,7 +41,8 @@ public class HomePage_2 {
         driver.findElement(jsConfirm).click();
     }
 
-    public void clickonClickHere() {
+    //Multiple Window code
+    public void clickClickHereButton() {
         driver.findElement(multipleWindows).click();
         driver.findElement(clickHere).click();
         Set<String> windows = driver.getWindowHandles();

@@ -14,8 +14,8 @@ public class Base {
         System.setProperty("webdriver.chrome.driver" ,  "/Users/lovely.munjal/Downloads/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        driver.get("https://spree-vapasi.herokuapp.com");
-        driver.get("http://the-internet.herokuapp.com");
+        driver.get("https://spree-vapasi.herokuapp.com");
+//        driver.get("http://the-internet.herokuapp.com");
     }
 
     public void close() throws Exception {

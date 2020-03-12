@@ -19,7 +19,8 @@ public class LoginTest extends Base {
         loginObj.setUsername();
         loginObj.setpassword();
         loginObj.clickLogin();
-        System.out.println("Test runnign *****");
+
+        // put any assertion , below one is just for demo purpose how POM and Base class working together
         Assert.assertEquals(1,1);
     }
 }
